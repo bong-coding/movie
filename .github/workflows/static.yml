@@ -2,17 +2,14 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # main 브랜치에 푸시될 때 자동 배포
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -36,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './dist'  # 빌드된 결과물이 담기는 dist 폴더
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
