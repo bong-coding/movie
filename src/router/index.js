@@ -51,11 +51,7 @@ const routes = [
 ];
 
 const router = createRouter({
-<<<<<<< HEAD
   history: createWebHashHistory(),
-=======
-  history: createWebHistory(),
->>>>>>> a4f17cb (init)
   routes,
 });
 
