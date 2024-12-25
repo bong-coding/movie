@@ -1,5 +1,9 @@
 // src/router/index.js
+<<<<<<< HEAD
 import { createRouter, createWebHashHistory } from "vue-router";
+=======
+import { createRouter, createWebHistory } from "vue-router";
+>>>>>>> a4f17cb (init)
 import Home from "../views/Home.vue";
 import Popular from "../views/Popular.vue";
 import Search from "../views/Search.vue";
@@ -47,7 +51,11 @@ const routes = [
 ];
 
 const router = createRouter({
+<<<<<<< HEAD
   history: createWebHashHistory(),
+=======
+  history: createWebHistory(),
+>>>>>>> a4f17cb (init)
   routes,
 });
 
